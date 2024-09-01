@@ -1,0 +1,51 @@
+name: Compile Spark
+
+on:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    name: run on windows
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ilammy/msvc-dev-cmd@v1.4.1
+    - name: compile
+      run: | 
+        cl main.cpp /Fe:spark /std:c++latest
+    - name: run
+      run: |
+        spark.exe test.spark
+      shell: cmd
+    - name: upload executable
+      uses: actions/upload-artifact@v2
+      with:
+        name: windows
+        path: |
+          spark.exe
+  mac-and-ubuntu:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    name: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Add msbuild to PATH
+      - uses: microsoft/setup-msbuild@v2
+      - name: Build app for release
+        run: msbuild assets\shield-development.sln -t:rebuild -verbosity:diag -property:Configuration=Release
+      - name: compile
+        run: |
+          g++ -std=c++17 main.cpp -o spark
+      - name: run
+        run: |
+          ./spark test.spark
+        shell: bash
+      - name: upload executable
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{matrix.os}}
+          path: |
+            spark
+          
