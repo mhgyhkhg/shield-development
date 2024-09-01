@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C41B361C-30D1-AE11-B9C5-A8E8257AA515}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>shared-code</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\x64\Debug\</OutDir>
+    <IntDir>obj\x64\Debug\shared-code\</IntDir>
+    <TargetName>shared-code</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\x64\Release\</OutDir>
+    <IntDir>obj\x64\Release\shared-code\</IntDir>
+    <TargetName>shared-code</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;DEBUG;_DEBUG;ASMJIT_STATIC;ASMJIT_NO_AARCH64;ASMJIT_NO_FOREIGN;LTC_NO_FAST;LTC_NO_PROTOTYPES;LTC_NO_RSA_BLINDING;LTM_DESC;__STDC_IEC_559__;MP_NO_DEV_URANDOM;RAPIDJSON_HAS_STDSTRING;ZLIB_CONST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\source\shared-code;src;..\deps\asmjit\src;..\deps\libtomcrypt\src\headers;..\deps\libtommath;..\deps\minhook\include;..\deps\zlib\contrib\minizip;..\deps\picoproto;..\deps\rapidcsv\src;..\deps\rapidjson\include;..\deps\stb;..\deps\winreg\WinReg;..\deps\xxhash;..\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DisableSpecificWarnings>4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;NDEBUG;ASMJIT_STATIC;ASMJIT_NO_AARCH64;ASMJIT_NO_FOREIGN;LTC_NO_FAST;LTC_NO_PROTOTYPES;LTC_NO_RSA_BLINDING;LTM_DESC;__STDC_IEC_559__;MP_NO_DEV_URANDOM;RAPIDJSON_HAS_STDSTRING;ZLIB_CONST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\source\shared-code;src;..\deps\asmjit\src;..\deps\libtomcrypt\src\headers;..\deps\libtommath;..\deps\minhook\include;..\deps\zlib\contrib\minizip;..\deps\picoproto;..\deps\rapidcsv\src;..\deps\rapidjson\include;..\deps\stb;..\deps\winreg\WinReg;..\deps\xxhash;..\deps\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/GL %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4702 /LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\shared-code\exception\minidump.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\binary_resource.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\com.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\compression.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\concurrency.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\cryptography.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\finally.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\flags.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\hardware_breakpoint.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\hook.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\http.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\identity.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\image.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\info_string.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\io.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\json_config.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\memory.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\nt.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\progress_ui.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\signature.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\string.hpp" />
+    <ClInclude Include="..\source\shared-code\utilities\thread.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\shared-code\exception\minidump.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\binary_resource.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\com.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\compression.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\cryptography.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\flags.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\hardware_breakpoint.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\hook.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\http.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\identity.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\image.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\info_string.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\io.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\json_config.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\memory.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\nt.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\progress_ui.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\signature.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\string.cpp" />
+    <ClCompile Include="..\source\shared-code\utilities\thread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="asmjit.vcxproj">
+      <Project>{ED0182F2-D9A3-ACC8-C25E-C01CAE9F3319}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libtomcrypt.vcxproj">
+      <Project>{1E3156E2-8AE6-CED7-13DB-C8AE7F8FC5DB}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libtommath.vcxproj">
+      <Project>{36F6A20E-22AE-E45B-8BB5-BDB7778C7F4C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="minhook.vcxproj">
+      <Project>{5A9B3AC7-C67A-B962-CF92-44393BF11FC4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="minizip.vcxproj">
+      <Project>{C5553BC7-3135-BA62-3A4D-4539A6AB20C4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="picoproto.vcxproj">
+      <Project>{048B6B9F-70F5-1F16-B933-D1BB25DDFD6A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="zlib.vcxproj">
+      <Project>{16CFA17C-0206-A30D-ABF2-881097081F0F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
