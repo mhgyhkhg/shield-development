@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="component">
+      <UniqueIdentifier>{18DEAB42-8448-60B9-CD86-115F39303E0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="definitions">
+      <UniqueIdentifier>{018843FD-6D3D-BCF2-F631-B6C962E6B2F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demonware">
+      <UniqueIdentifier>{079C337A-7306-E8F0-BC44-999628EEC545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demonware\servers">
+      <UniqueIdentifier>{8075E0E9-EC8B-DE7F-3503-6AA1A158AF07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demonware\services">
+      <UniqueIdentifier>{DA15F125-C6F9-B17B-2F5A-ACCE1B5D9CFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader">
+      <UniqueIdentifier>{3CB0DB0B-2852-06E2-110D-1A36FD4D8D32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{202B5BA7-8C95-0F1E-D5D3-C0C3417DED72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\dw">
+      <UniqueIdentifier>{6AAC2145-560F-B1E9-FF94-E99FEBD67C6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spoofer">
+      <UniqueIdentifier>{E3EB81A5-4FCB-0041-58E3-8B17C44167A2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\proxy-dll\component\command.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\console.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\debugging.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\dvars.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\game_console.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\gsc_custom.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\gsc_funcs.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\hashes.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\keycatchers.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\logger.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\platform.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\scheduler.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\component\splash.hpp">
+      <Filter>component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\game.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\keys.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\network.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\scripting.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\variables.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\definitions\xassets.hpp">
+      <Filter>definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\bit_buffer.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\byte_buffer.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\data_types.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\fileshare.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\keys.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\objects.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\protobuf.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\reply.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\server_registry.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\auth3_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\base_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\fileshare_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\lobby_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\service_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\stun_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\tcp_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\udp_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\servers\umbrella_server.hpp">
+      <Filter>demonware\servers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\service.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services.hpp">
+      <Filter>demonware</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdAnticheat.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdBandwidthTest.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdCounter.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdDML.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdEventLog.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdGroup.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdKeyArchive.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdLootGeneration.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdMarketingComms.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdMarketplace.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdObjectStore.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdPooledStorage.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdProfiles.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdPublisherVariables.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdRichPresence.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdStats.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdTags.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdTitleUtilities.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\demonware\services\bdUNK125.hpp">
+      <Filter>demonware\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\loader\component_interface.hpp">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\loader\component_loader.hpp">
+      <Filter>loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\resource.hpp" />
+    <ClInclude Include="..\source\proxy-dll\spoofer\spoofcall.hpp">
+      <Filter>spoofer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\proxy-dll\std_include.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\proxy-dll\component\arxan.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\blackbox.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\command.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\console.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\debugging.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\demonware.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\dvars.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\game_console.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\gsc_custom.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\gsc_funcs.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\hashes.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\keycatchers.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\logger.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\lua.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\mods.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\platform.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\scheduler.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\splash.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\unlockall.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\component\watermark.cpp">
+      <Filter>component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\game.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\keys.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\network.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\scripting.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\variables.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\definitions\xassets.cpp">
+      <Filter>definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\bit_buffer.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\byte_buffer.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\fileshare.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\keys.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\objects.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\protobuf.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\reply.cpp">
+      <Filter>demonware</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\auth3_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\base_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\fileshare_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\lobby_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\stun_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\tcp_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\udp_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\servers\umbrella_server.cpp">
+      <Filter>demonware\servers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdAnticheat.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdBandwidthTest.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdCounter.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdDML.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdEventLog.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdGroup.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdKeyArchive.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdLootGeneration.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdMarketingComms.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdMarketplace.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdObjectStore.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdPooledStorage.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdProfiles.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdPublisherVariables.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdRichPresence.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdStats.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdTags.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdTitleUtilities.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\demonware\services\bdUNK125.cpp">
+      <Filter>demonware\services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\loader\component_loader.cpp">
+      <Filter>loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\main.cpp" />
+    <ClCompile Include="..\source\proxy-dll\spoofer\spoofcall.cpp">
+      <Filter>spoofer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\proxy-dll\std_include.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\proxy-dll\resources\dw\auth_traffic_signing_key.dat">
+      <Filter>resources\dw</Filter>
+    </None>
+    <None Include="..\source\proxy-dll\resources\dw\publisher_objects_list.csv">
+      <Filter>resources\dw</Filter>
+    </None>
+    <None Include="..\source\proxy-dll\resources\icon.ico">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\proxy-dll\resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\source\proxy-dll\resources\splash.jpg">
+      <Filter>resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

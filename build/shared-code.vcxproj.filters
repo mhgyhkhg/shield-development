@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="exception">
+      <UniqueIdentifier>{74919B5E-E0FB-4FD5-293A-017B95E32D2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{212A0ED3-8D94-C249-D6D2-73EF427CA09E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\shared-code\exception\minidump.hpp">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\binary_resource.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\com.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\compression.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\concurrency.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\cryptography.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\finally.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\flags.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\hardware_breakpoint.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\hook.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\http.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\identity.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\image.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\info_string.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\io.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\json_config.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\memory.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\nt.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\progress_ui.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\signature.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\string.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\shared-code\utilities\thread.hpp">
+      <Filter>utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\shared-code\exception\minidump.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\binary_resource.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\com.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\compression.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\cryptography.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\flags.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\hardware_breakpoint.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\hook.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\http.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\identity.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\image.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\info_string.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\io.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\json_config.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\memory.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\nt.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\progress_ui.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\signature.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\string.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\shared-code\utilities\thread.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
